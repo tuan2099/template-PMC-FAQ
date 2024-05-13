@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMC-FAQ</title>
+    <link href="./fontawesome-free-6.5.2-web/css/all.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- #Header -->
+    <header class="py-4 lg:py-6 xl:py-8 z-10">
+      <div class="ht-container flex items-center justify-between relative">
+        <!-- #LOGO -->
+        <div class="w-24 lg:w-32">
+          <h1>
+            <a title="logo" href="#">
+              <img
+                alt="logo-primary"
+                src="https://pmcweb.vn/wp-content/uploads/logo.png"
+                class="max-w-full"
+              />
+            </a>
+          </h1>
+        </div>
+        <!-- /#LOGO -->
+        <!-- Responsive Toggle Button -->
+        <div class="block lg:hidden">
+          <button
+            id="menu-toggle"
+            class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-500 hover:text-gray-700 hover:border-gray-700 focus:outline-none focus:text-gray-700 focus:border-gray-700"
+          >
+            <svg
+              class="h-5 w-5 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <!-- #Primary nav -->
+        <nav
+          class="hidden lg:block lg:static lg:px-0 lg:w-[inherit] absolute bg-white px-[20px] w-full left-0 top-[60px] z-[99]"
+        >
+          <ul class="lg:flex md:items-center lg:justify-between">
+            <li class="mr-4">
+              <a
+                href="#"
+                class="text-base leading-6 text-gray-700 hover:text-gray-900"
+                >Home</a
+              >
+            </li>
+            <li class="mr-4">
+              <a
+                href="#"
+                class="text-base leading-6 text-gray-700 hover:text-gray-900"
+                >About Us</a
+              >
+            </li>
+            <li class="mr-4">
+              <a
+                href="#"
+                class="text-base leading-6 text-gray-700 hover:text-gray-900"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-base leading-6 text-gray-700 hover:text-gray-900"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- /#Primary nav -->
+      </div>
+    </header>
+    <!-- /#Header -->
+    <!-- #live search -->
+    <div class="bg-[#f5f5f5] py-[25px] border-y-[1px]">
+      <div class="ht-container">
+        <div>
+          <form
+            class="w-full bg-white border-[1px] border-[#d1d1d1] relative rounded-[99px]"
+          >
+            <input
+              type="text"
+              placeholder="Have a question? Ask or enter a search term"
+              class="w-full md:w-[80%] bg-transparent text-[#595959] text-[15px] py-[20px] px-[25px] border-none relative outline-none"
+            />
+            <button
+              class="bg-primary-color absolute right-0 top-0 text-white mt-[10px] mr-[25px] py-[10px] px-[18px] uppercase border-none rounded-[99px]"
+            >
+              <i class="fas fa-search"></i>
+              <span class="hidden md:inline">SEARCH</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /#live search -->
+    <!-- #primary -->
+    <div>
+      <div class="ht-container grid grid-cols-1 md:grid-cols-3">
+        <!-- #content -->
+        <section class="col-span-2 pt-[40px] pr-[40px]">
+          <header class="border-b-[1px] mb-[30px] pb-[10px] relative">
+            <h2 class="text-[22px]">Article Categories</h2>
+          </header>
+          <div class="accordion">
+            <div
+              class="accordion-item border-b-[1px] mb-[20px] pb-[10px] pl-[45px]"
+            >
+              <button
+                class="accordion-button text-[24px] font-semibold relative"
+              >
+                <div class="absolute left-[-45px]">
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                Section 1
+              </button>
+              <div class="accordion-content hidden text-[#4d4d4d]">
+                <p>Content of section 1 goes here...</p>
+              </div>
+            </div>
+            <div
+              class="accordion-item border-b-[1px] mb-[20px] pb-[10px] pl-[45px]"
+            >
+              <button
+                class="accordion-button text-[24px] font-semibold relative"
+              >
+                <div class="absolute left-[-45px]">
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                Section 1
+              </button>
+              <div class="accordion-content hidden text-[#4d4d4d]">
+                <p>Content of section 1 goes here...</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /#content -->
+        <!-- #side bar -->
+        <aside class="col-span-1 md:border-l-[1px]">
+          <!-- #category -->
+          <div class="md:pl-[30px] pt-[40px] text-[13px]">
+            <h4
+              class="border-b-[4px] text-[#444] text-[15px] mb-[25px] relative border-double font-semibold"
+            >
+              <span class="bg-white table mt-[-6px] mb-[-9px] pr-[10px]"
+                >Categories</span
+              >
+            </h4>
+            <ul>
+              <li class="mb-[12px] flex items-center">
+                <i class="fas fa-file-alt text-[25px] text-[gray]"></i>
+                <a href="" class="text-[#45454C] pl-[10px]">Account settings</a>
+              </li>
+              <li class="mb-[12px] flex items-center">
+                <i class="fas fa-file-alt text-[25px] text-[gray]"></i>
+                <a href="" class="text-[#45454C] pl-[10px]">Account settings</a>
+              </li>
+              <li class="mb-[12px] flex items-center">
+                <i class="fas fa-file-alt text-[25px] text-[gray]"></i>
+                <a href="" class="text-[#45454C] pl-[10px]">Account settings</a>
+              </li>
+              <li class="mb-[12px] flex items-center">
+                <i class="fas fa-file-alt text-[25px] text-[gray]"></i>
+                <a href="" class="text-[#45454C] pl-[10px]">Account settings</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /#category -->
+          <!-- #Popular Articles -->
+          <div class="md:pl-[30px] pt-[40px] text-[13px]">
+            <h4
+              class="border-b-[4px] text-[#444] text-[15px] mb-[25px] relative border-double font-semibold"
+            >
+              <span class="bg-white table mt-[-6px] mb-[-9px] pr-[10px]"
+                >Popular Articles</span
+              >
+            </h4>
+            <ul>
+              <li class="mb-[12px] flex items-center">
+                <i class="fas fa-file-alt text-[25px] text-[gray]"></i>
+                <a href="" class="text-[#45454C] pl-[10px]">Account settings</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /#Popular Articles -->
+        </aside>
+        <!-- /#side bar -->
+      </div>
+    </div>
+    <!-- /#primary -->
+    <footer
+      class="border-t border-gray-300 py-4 md:py-8 lg:py-12 leading-[10px] text-[#444] text-sm md:text-base"
+    >
+      <div
+        class="ht-container flex flex-col md:flex-row items-center justify-between"
+      >
+        <nav class="mb-4 md:mb-0">
+          <ul class="flex md:flex-row items-center justify-between space-x-3">
+            <li class="pb-2 md:pb-0">
+              <a href="#" class="text-[#444444] text-[13px]">Home</a>
+            </li>
+            <li class="pb-2 md:pb-0">
+              <a href="#" class="text-[#444444] text-[13px]">About Us</a>
+            </li>
+            <li class="pb-2 md:pb-0">
+              <a href="#" class="text-[#444444] text-[13px]">Services</a>
+            </li>
+            <li class="pb-2 md:pb-0">
+              <a href="#" class="text-[#444444] text-[13px]">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <small class="text-xs md:text-sm">
+          © Copyright, A <a href="#" class="text-[#444444]">ahi hi</a></small
+        >
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menu-toggle");
+        const nav = document.querySelector("nav");
+
+        menuToggle.addEventListener("click", function () {
+          nav.classList.toggle("hidden");
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionButtons = document.querySelectorAll(".accordion-button");
+        accordionButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Lấy phần tử cha của nút được nhấp vào
+            const accordionItem = this.closest(".accordion-item");
+
+            // Tìm phần tử con có lớp "accordion-content"
+            const content = accordionItem.querySelector(".accordion-content");
+
+            // Ẩn hoặc hiện nội dung khi nhấp vào nút
+            content.classList.toggle("hidden");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

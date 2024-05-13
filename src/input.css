@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Open Sans", "Helvetica";
+}
+footer ul li,
+.primary-nav > ul li {
+  @apply after:content-['/'] after:text-[#ccc] after:mb-[15px];
+}
+
+footer ul li:last-child,
+.primary-nav > ul li:last-child {
+  @apply after:content-none;
+}
+
+.current-menu-item a {
+  @apply font-semibold;
+}
+
+.folder-icon {
+  @apply before:content-['\f07b'] before:inline-block before:absolute before:font-[FontAwesome] before:text-[26px] before:text-[#4d4d4d] before:left-0 before:top-0 before:leading-[1];
+}
+
+.document-icon {
+  @apply before:content-['\f15c'] before:inline-block before:absolute before:font-[FontAwesome] before:text-[26px] before:text-[#4d4d4d] before:left-0 before:top-0 before:leading-[1];
+}
+.accordion-item:last-child,
+.main-content > div:last-child {
+  @apply border-none;
+}
